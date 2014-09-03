@@ -9,6 +9,10 @@ while True:
     line = f.readline()
     if "NM:i:0" in line:
         n_al = n_al + 1
+    else: 
+        if line == "":
+            break
+        
 print n_al
 
 
