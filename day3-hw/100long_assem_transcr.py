@@ -19,13 +19,25 @@ seq_sort = sorted(all_seqs, key = len, reverse = True)
 
 longest_100_seq = seq_sort[0:100]
 
+#reader.write(longest_100_seq)
+
 print longest_100_seq
+
 
 #seq_sort > "longest_100_seq.fa" 
 
-def ReverseComplement1(seq):
+def ReverseComplement(seq):
     seq_dict = {'A':'T','T':'A','G':'C','C':'G'}
     return "".join([seq_dict[base] for base in reversed(seq)])   
+    
+rev_complement_list = []
+for rev_comp in rev_complement_list:
+    x = complement(rev_comp)
+    reverse_compliment = x[::-1] 
+    rev_complement_list.append(reverse_compliment)
+print rev_complement_list
+
+
 #reverse complements from longest_100_seq
 
     
