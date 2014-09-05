@@ -26,7 +26,7 @@ print longest_100_seq
 def ReverseComplement1(seq):
     seq_dict = {'A':'T','T':'A','G':'C','C':'G'}
     return "".join([seq_dict[base] for base in reversed(seq)])   
-
+#reverse complements from longest_100_seq
 
     
 #ReverseComplement1 > "longest_100_reverse_comp.fa" 
