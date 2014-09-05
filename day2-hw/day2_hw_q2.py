@@ -1,8 +1,19 @@
 #!/usr/bin/env python
 
+<<<<<<< HEAD
 import pandas as pd
 import csv
 
+=======
+m10_output = "/Users/cmdb/data/results/SRR072893_clout/genes.fpkm_tracking"
+m11_output = "/Users/cmdb/data/results/SRR072894_clout/genes.fpkm_tracking"
+m12_output = "/Users/cmdb/data/results/SRR072895_clout/genes.fpkm_tracking"
+m13_output = "/Users/cmdb/data/results/SRR072896_clout/genes.fpkm_tracking"
+m14a_output = "/Users/cmdb/data/results/SRR072897_clout/genes.fpkm_tracking"
+m14b_output = "/Users/cmdb/data/results/SRR072899_clout/genes.fpkm_tracking"
+m14c_output = "/Users/cmdb/data/results/SRR072901_clout/genes.fpkm_tracking"
+m14d_output = "/Users/cmdb/data/results/SRR072903_clout/genes.fpkm_tracking"
+>>>>>>> 0b296dc1145c781656b6cc9a570b79f873659487
 f10_output = "/Users/cmdb/data/results/SRR072905_clout/genes.fpkm_tracking"
 f11_output = "/Users/cmdb/data/results/SRR072906_clout/genes.fpkm_tracking"
 f12_output = "/Users/cmdb/data/results/SRR072907_clout/genes.fpkm_tracking"
@@ -12,6 +23,7 @@ f14b_output = "/Users/cmdb/data/results/SRR072911_clout/genes.fpkm_tracking"
 f14c_output = "/Users/cmdb/data/results/SRR072913_clout/genes.fpkm_tracking"
 f14d_output = "/Users/cmdb/data/results/SRR072915_clout/genes.fpkm_tracking"
 #used terminal to find pathway
+<<<<<<< HEAD
 
 df_f10 = pd.read_table(f10_output)
 df_f11 = pd.read_table(f11_output)
@@ -24,6 +36,17 @@ df_f14d = pd.read_table(f14d_output)
 
 
 total = []
+=======
+total = []
+total.append(m10_output) 
+total.append(m11_output)
+total.append(m12_output) 
+total.append(m13_output) 
+total.append(m14a_output) 
+total.append(m14b_output) 
+total.append(m14c_output) 
+total.append(m14d_output) 
+>>>>>>> 0b296dc1145c781656b6cc9a570b79f873659487
 total.append(f10_output) 
 total.append(f11_output) 
 total.append(f12_output) 
@@ -36,6 +59,7 @@ total.append(f14d_output)
  
 #open files
 
+<<<<<<< HEAD
 
 #Slx_file_list9 = df_f10["FPKM"].str.contains("Sxl")
 #Slx_file_list10 = df_f11["FPKM"].str.contains("Sxl")
@@ -66,3 +90,13 @@ print deeper_list
 #        Slx_file_list.append(fields[9])
 
 #print sorted(Slx_file_list)
+=======
+Slx_file_list = []
+for i, in total:
+    f = open (i)
+    fields = line.rstrip("\r\n").split("\t")
+    if "Slx" in line:
+        Slx_file_list.append(fields[9])
+
+print sorted(Slx_file_list)
+>>>>>>> 0b296dc1145c781656b6cc9a570b79f873659487
