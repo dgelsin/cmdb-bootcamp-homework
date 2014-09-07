@@ -4,8 +4,8 @@ number_alignments_sam = "/Users/cmdb/data/day2/accepted_hits.sam"
 
 f = open(number_alignments_sam)
 
-for i, line in enumerate(f):
-    fields = line.rstrip("\r\n").split("\t")
-    if i > 0:
-        print fields[2],
+for line in f:
+    fields = line.split("\t")
+    #if line > 0:
+    print fields[2]
 

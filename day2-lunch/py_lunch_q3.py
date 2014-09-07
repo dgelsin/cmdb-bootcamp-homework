@@ -13,4 +13,4 @@ while True:
         if line == "":
             break
         
-print n_al
+print "\nThere are " +str(n_al) + " reads that maps to one location on genome"
